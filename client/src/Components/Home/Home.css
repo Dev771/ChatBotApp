@@ -1,0 +1,126 @@
+.home-container {
+    margin: auto 30px;
+    margin-top: 20vh;
+    height: 75vh;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.textArea {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+}
+
+.textArea > input {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #dadada;
+    background-color: transparent;
+    color: #dadada;
+    padding: 10px 20px;
+}
+
+.textArea > button {
+    background-color: transparent;
+    border-radius: 50%;
+    /* width: 40px;
+    height: 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.textArea > button:hover {
+    background-color: #dadada;
+    mix-blend-mode: color-dodge;
+}
+
+.textArea > button > img {
+    width: 25px;
+    height: 25px;
+}
+
+.chatArea::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+.chatArea::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+.chatArea {
+    margin: 40px;
+    height: 60%;
+    padding: 8px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chat {
+    display: flex;
+    gap: 10px;
+}
+
+.chat > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #dadada;
+}
+
+.chat > img {
+    width: 40px;
+    height: 40px;
+}
+
+.chatUser {
+    flex-direction: row-reverse;
+}
+
+.LoadingMsg {
+    display: flex;
+    gap: 10px;
+}
+
+.LoadingMsg > div {
+    width: 10px;
+    height: 10px;
+    background-color: #645a5a;  
+    border-radius: 20px;
+}
+
+.LoadingMsg > div:first-child {
+    animation: Loading 1s ease-in-out infinite;  
+}
+
+.LoadingMsg > div:nth-child(2) {
+    animation: Loading 1s ease-in-out infinite .3s;  
+}
+
+.LoadingMsg > div:nth-child(3) {
+    animation: Loading 1s ease-in-out infinite .6s;  
+}
+
+@keyframes Loading {
+    0% {
+        height: 10px;
+    }
+    100% {
+        height: 20px;
+    }
+}

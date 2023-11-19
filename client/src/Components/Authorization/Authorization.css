@@ -1,0 +1,59 @@
+
+
+.card {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 400px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.heading {
+    margin: 0;
+    background-color: #ccc;
+    padding: 10px 30px;
+}
+
+form {
+    margin: 40px;
+    color: #dadada;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.inputs > input {
+    padding: 10px 20px;
+    color: #dadada;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+}
+
+.submitBtnDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn {
+    background-color: #ccc;
+    font-weight: bolder;
+    color: #131313;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.error {
+    font-size: x-large;
+    color: red;
+}

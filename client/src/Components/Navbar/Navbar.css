@@ -1,0 +1,38 @@
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 10px 40px;
+    background-color: #302e2e;
+    color: #dadada;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav > h1 > a {
+    color: #dadada;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+.nav-buttons > .navButton {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.nav-buttons > .navButton:hover {
+    text-shadow: 0px 0px 20px black, 0px 0px 30px #ccc;
+}
