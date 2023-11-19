@@ -7,12 +7,14 @@ const Navbar = () => {
   const [logged, setLogged] = useState(localStorage.getItem("logged"));
   const navigate = useNavigate();
 
+  //To check whether a User is Logged or not
   useEffect(() => {
     window.addEventListener("storage", () => {
       setLogged(localStorage.getItem("logged"));
     })
   }, [])
 
+  //Logout Functionality
   const handleClick = () => {
     localStorage.clear();
     window.dispatchEvent(new Event("storage"));

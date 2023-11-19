@@ -10,9 +10,9 @@ const Registeration = () => {
 
     const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        api.registerUser(user)
+        await api.registerUser(user)
             .then((response) => {
                 localStorage.setItem("logged", true);
                 localStorage.setItem("User", JSON.stringify(response.data.data));

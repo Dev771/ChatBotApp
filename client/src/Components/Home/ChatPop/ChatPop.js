@@ -3,6 +3,7 @@ import chatbot from '../../../img/chatbot.png';
 
 const ChatPop = ({ author, msg }) => {
 
+  //Spliting The Messages in Case of Line Breaks
   const finalMessage = msg.split("\n");
 
   return (

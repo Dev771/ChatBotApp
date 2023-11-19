@@ -10,13 +10,15 @@ const Login = () => {
 
     const navigate = useNavigate();
 
+    //Redirecting to Home Page if User is already Logged
     useEffect(() => {
         if(localStorage.getItem("logged")) navigate("/");
     }, [navigate]);
 
-    const handleSubmit = (e) => {
+    //Sending user details to the Sever for User Authentication
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        api.loginUser(user)
+        await api.loginUser(user)
             .then((response) => {
                 localStorage.setItem("logged", true);
                 localStorage.setItem("User", JSON.stringify(response.data.data));
