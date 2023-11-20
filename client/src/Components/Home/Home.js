@@ -7,7 +7,7 @@ import io from 'socket.io-client';
 import { useNavigate } from 'react-router-dom';
 import config from '../../config/config.json';
 //Client Socket Io Connection
-const socket = io.connect(config.baseUrl);
+const socket = io.connect("http://34.100.201.36:3000");
 
 const Home = () => {
 
