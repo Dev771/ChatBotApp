@@ -2,6 +2,7 @@ import { Server } from 'socket.io';
 import { chat } from '../controller/chatController.js';
 
 export const socketConnection = (server) => {
+    
     //Establishing Socket.Io server
     const io = new Server(server, {
         cors: {

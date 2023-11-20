@@ -6,15 +6,15 @@
     border-radius: 20px;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .textArea {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    left: 0;
-    right: 0;
     bottom: 0px;
+    margin-top: 10px;
 }
 
 .textArea > input {
@@ -61,7 +61,7 @@
 
 .chatArea {
     margin: 40px;
-    height: 60%;
+    margin-bottom: 10px;
     padding: 8px;
     overflow-y: scroll;
     display: flex;
