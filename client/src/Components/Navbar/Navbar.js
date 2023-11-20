@@ -18,7 +18,7 @@ const Navbar = () => {
   const handleClick = () => {
     localStorage.clear();
     window.dispatchEvent(new Event("storage"));
-    navigate("/login");
+    navigate("/loginUser");
   }
 
   return (
@@ -34,8 +34,8 @@ const Navbar = () => {
                   </>
                 ) : (
                   <>
-                    <a href='/login' className='navButton'>Login</a>
-                    <a href='/register' className='navButton'>Register</a>
+                    <a href='/loginUser' className='navButton'>Login</a>
+                    <a href='/registerUser' className='navButton'>Register</a>
                   </>
                 )
               }

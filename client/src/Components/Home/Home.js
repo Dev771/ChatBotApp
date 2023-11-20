@@ -5,8 +5,9 @@ import ChatPop from './ChatPop/ChatPop';
 import * as api from '../../api/index';
 import io from 'socket.io-client';
 import { useNavigate } from 'react-router-dom';
+import config from '../../config/config.json';
 //Client Socket Io Connection
-const socket = io.connect("http://localhost:3000");
+const socket = io.connect(config.baseUrl);
 
 const Home = () => {
 
@@ -53,7 +54,7 @@ const Home = () => {
                 findRecords();
             })
         } else {
-            navigate("/login");
+            navigate("/loginUser");
         }
     }, [navigate])
 
